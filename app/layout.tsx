@@ -1,22 +1,21 @@
-import {Poppins} from 'next/font/google'
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from './components/Navbar/Navbar';
+import Navbar from "./components/Navbar/Navbar";
 
 const poppins = Poppins({
-  subsets:['latin'],
-  weight:['100','200','300', '400', '500', '600', '700', '800', '900']
-})
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
- 
   return (
-    <html lang="en">
-      <body className={`${poppins.className} ${poppins.className}`}>
-        <Navbar/>
+    <html lang="pt-BR">
+      <body className={`${poppins.className}`}>
+        <Navbar />
         {children}
       </body>
     </html>
