@@ -5,12 +5,13 @@ import Link from 'next/link'
 export interface NavItemInterface {
     url: string;
     label: string;
+    isActive?: boolean;
 }
 
-const NavItem = ({url, label}: NavItemInterface) => {
+const NavItem = ({url, label, isActive}: NavItemInterface) => {
   return (
     <li className={styles.navItem}>
-    <Link href={url} className={styles.navLink}>{label}</Link>
+    <Link href={url} className={ `${styles.navLink} ${isActive ? 'active': ''}`}>{label}</Link>
   </li>
   )
 }

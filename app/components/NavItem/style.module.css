@@ -1,6 +1,13 @@
 .navItem {
-    .navLink {
-        font-size: 16px;
-        color: #c8c8c8;
+  .navLink {
+    font-size: 16px;
+    color: #c8c8c8;
+    transition: color  0.3s;
+    padding: 4px 0;
+
+    &:hover,&.active {
+      color: #56cef9;
+      border-bottom: 2px solid #56cef9;
     }
+  }
 }
