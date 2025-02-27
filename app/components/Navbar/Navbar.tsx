@@ -48,7 +48,7 @@ const Navbar = () => {
         <span className={styles.nameLogo}>Laécio</span>
       </div>
       <nav className={styles.navbar}>
-        <ul className={`${styles.navItems} ${openMenu ? "open" : ""}`}>
+        <ul className={`${styles.navItems} ${openMenu ? styles.open : ""}`}>
           {items.map((item, index) => {
             return (
               <NavItem

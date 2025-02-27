@@ -11,7 +11,7 @@ export interface NavItemInterface {
 const NavItem = ({url, label, isActive}: NavItemInterface) => {
   return (
     <li className={styles.navItem}>
-    <Link href={url} className={ `${styles.navLink} ${isActive ? 'active': ''}`}>{label}</Link>
+    <Link href={url} className={ `${styles.navLink} ${isActive ? styles.active : ''}`}>{label}</Link>
   </li>
   )
 }
