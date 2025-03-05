@@ -1,0 +1,10 @@
+.caracterName {
+    position: relative;
+    top:0;
+
+    &:hover {
+        top:-4px;
+        color: #56cef9;
+        transition: all .2s ease-in-out
+    }
+}

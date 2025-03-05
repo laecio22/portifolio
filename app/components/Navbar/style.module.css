@@ -1,8 +1,8 @@
 .nameLogo {
-  color: #c8c8c8;
-  font-family: "Poppins";
-  font-weight: 300;
-  font-size: 20px;
+  color: #c8c8c8;  
+  font-weight: 400;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .header {
@@ -79,7 +79,6 @@
 
       &.open {
         display: flex;
-       
       }
     }
 

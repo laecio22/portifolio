@@ -7,6 +7,7 @@ import NavItem, { NavItemInterface } from "../NavItem/NavItem";
 import styles from "./style.module.css";
 import { usePathname } from "next/navigation";
 import { FaBars, FaXmark } from "react-icons/fa6";
+import LetterName from "../LetterName/LetterName";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -39,13 +40,25 @@ const Navbar = () => {
   ];
 
   const pathname = usePathname();
+  const caracterNameList:string[] = [
+    'L', 'a', 'é', 'c', 'i', 'o'
+  ]
   return (
     <header className={styles.header}>
       <div className={styles.containerLogo}>
         <Link href="/" className={styles.imgLogo}>
           <Image src={Logo} alt="logo da  aplicação" width={50} />
         </Link>
-        <span className={styles.nameLogo}>Laécio</span>
+        <span className={styles.nameLogo}>
+          {
+            caracterNameList.map((caracter, index)=>{
+              return (
+                <LetterName letter={caracter} key={index}/>
+              )
+            })
+          }      
+        
+        </span>
       </div>
       <nav className={styles.navbar}>
         <ul className={`${styles.navItems} ${openMenu ? styles.open : ""}`}>
