@@ -1,6 +1,14 @@
+@keyframes moveImage {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  100% {
+    transform: translate3d(-30px, -50px, 0px);
+  }
+}
 .containerPrincipal {
   max-width: 1400px;
-  background-color: blueviolet;
   margin: 0 auto;
 }
 
@@ -8,4 +16,15 @@
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.containerImage {
+  position: relative;
+}
+
+.imageUser {
+  width: 35rem;
+  height: 80%;
+  position: relative;
+  animation: moveImage 3s linear 1s infinite alternate none;
 }

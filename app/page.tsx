@@ -1,6 +1,6 @@
 import styles from './style.module.css';
 import Image from 'next/image';
-import imageTecnologia from '../public/assets/imagens/imagemTeste2.jpg'
+import imageTecnologia from '../public/assets/imagens/home.png'
 export default function Home() {
   return (
    <section className={styles.containerPrincipal}>
@@ -12,8 +12,8 @@ export default function Home() {
           <div>Desenvolvedor frontend</div>
           <button>Conheça meu portifólio</button>
         </div>
-        <div>
-           <Image src={imageTecnologia} alt='ilustração  de  uma pessoa  segurando um notebook'/>
+        <div className={styles.containerImage}>
+           <Image src={imageTecnologia} alt='ilustração  de  uma pessoa  segurando um notebook' className={styles.imageUser}/>
         </div>
       </section>
       <section>
