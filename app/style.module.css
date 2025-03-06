@@ -1,0 +1,11 @@
+.containerPrincipal {
+  max-width: 1400px;
+  background-color: blueviolet;
+  margin: 0 auto;
+}
+
+.sectionHome {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

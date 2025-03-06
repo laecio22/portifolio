@@ -1,10 +1,20 @@
-
+import styles from './style.module.css';
+import Image from 'next/image';
+import imageTecnologia from '../public/assets/imagens/imagemTeste2.jpg'
 export default function Home() {
   return (
-   <section>
-          Minha  aplicação
-      <section>
-        section  principal
+   <section className={styles.containerPrincipal}>
+         
+      <section className={styles.sectionHome}>
+        <div>
+          <div>Olá , o meu nome é </div>
+          <div>Laécio</div>
+          <div>Desenvolvedor frontend</div>
+          <button>Conheça meu portifólio</button>
+        </div>
+        <div>
+           <Image src={imageTecnologia} alt='ilustração  de  uma pessoa  segurando um notebook'/>
+        </div>
       </section>
       <section>
         section  apresentação
