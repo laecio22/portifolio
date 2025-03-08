@@ -18,6 +18,53 @@
   grid-template-columns: 1fr 1fr;
 }
 
+.containerText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subContainerText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.spanWave {
+  margin-right: 5px;
+}
+
+.iconHandle {
+  color: rgb(241, 213, 175);
+}
+
+.welcome {
+  font-size: 1.8rem;
+}
+
+.name {
+  font-size: 3rem;
+}
+
+.cargo {
+  font-size: 2.3rem;
+}
+
+.button {
+  width: 230px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  color: #eee;
+  border: 1px  solid #666;
+  font-size:1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
 .containerImage {
   position: relative;
 }
