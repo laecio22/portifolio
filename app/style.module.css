@@ -12,6 +12,7 @@
   margin: 0 auto;
 }
 
+/* estilização  sessão Home */
 .sectionHome {
   min-height: 100vh;
   display: grid;
@@ -80,12 +81,69 @@
   animation: moveImage 3s linear 1s infinite alternate none;
 }
 
+/* estilização  seção  apresentação */
+
 .sectionApresentation {
   background: rgb(29, 34, 49);
-  height: 30rem;
+  height: 25rem;
   max-width: 1400px;
   width: 85%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  border-radius: 0.6rem;
+}
+
+.containerImageApresentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageUserDesigner {
+  width: 20rem;
+  height: 15rem;
+}
+
+.containerTextApresentation {
+  padding-top: 2rem;
+
+  div {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  p {
+    margin-top: 0.8rem;
+  }
+
+  button {
+    margin-top: 2rem;
+    padding: 1rem 1.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: "Roboto";
+    font-size: 1.2rem;
+    background: #4a6aba;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+
+    &:hover {
+      background: rgb(44, 5, 236);
+    }
+  }  
+}
+
+.iconSend {
+  margin-left: 0.4rem;
+}
+
+.subTitleApresentation {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  color: #56cef9;
 }
