@@ -111,14 +111,15 @@
   div {
     font-size: 1.2rem;
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   p {
     margin-top: 0.8rem;
   }
 
-  button {
-    margin-top: 2rem;
+  a {
+ 
     padding: 1rem 1.8rem;
     border: none;
     border-radius: 0.5rem;
@@ -126,16 +127,12 @@
     font-family: "Roboto";
     font-size: 1.2rem;
     background: #4a6aba;
-    color: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.2rem;
+    color: #eee;   
 
     &:hover {
       background: rgb(44, 5, 236);
     }
-  }  
+  }
 }
 
 .iconSend {
@@ -146,4 +143,20 @@
   font-size: 2rem;
   margin-bottom: 0.4rem;
   color: #56cef9;
+}
+
+/* secão  habilidades */
+
+.sectionSkills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+
+  h1 {
+    color: #56cef9;
+    font-weight: 800;
+    font-size: 3.2rem;
+  }
 }

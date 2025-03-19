@@ -5,7 +5,12 @@ import ImageNote from "../public/assets/imagens/manDesigner.svg";
 import { PiHandWavingFill } from "react-icons/pi";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoIosSend } from "react-icons/io";
+import Link from "next/link";
 export default function Home() {
+
+  const skills = [
+    
+  ]
   return (
     <section className={styles.containerPrincipal}>
       <section className={styles.sectionHome}>
@@ -44,18 +49,23 @@ export default function Home() {
         <div className={styles.containerTextApresentation}>
           <h2 className={styles.subTitleApresentation}> Deixe-me apresentar</h2>
           <div>
-           
             Sou um desenvolvedor front-end apaixonado por projetar e codificar.
             Minha especialidade é a criação de interfaces e funcionalidades para
             aplicativos da web usando React.js e Next.js. Você pode conhecer
             mais sobre o meu perfil e o meu trabalho navegando pelo website.
-            <p>  P.S. este site é código aberto e está disponível no Github</p>
-          
-          </div>
-          <button>Entre em Contato <IoIosSend  className={styles.iconSend}/></button>
+            <p> P.S. este site é código aberto e está disponível no Github</p>
+          </div>        
+          <Link href="/contato">
+            Entre em Contato <IoIosSend className={styles.iconSend} />
+          </Link>
         </div>
       </section>
-      <section>Section habilidades</section>
+      <section className={styles.sectionSkills}>
+          <h1>Habilidades</h1>
+          <div>
+            conteudo
+          </div>
+      </section>
       <section>Section Experiências</section>
       <section>Section Projetos</section>
       <section>Section Contato</section>
