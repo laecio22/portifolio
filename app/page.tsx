@@ -6,10 +6,56 @@ import { PiHandWavingFill } from "react-icons/pi";
 import { FaArrowRight } from "react-icons/fa6";
 import { IoIosSend } from "react-icons/io";
 import Link from "next/link";
+import CardSkill from "./components/CardSkill/CardSkill";
+import imgHtml from '../public/assets/imagens/iconHtml.png';
+import imgCss  from '../public/assets/imagens/iconCss.png';
+import imgJavascript  from '../public/assets/imagens/iconJavascript.png';
+import imgTypescript  from '../public/assets/imagens/iconTypescript.png';
+import imgNext  from '../public/assets/imagens/iconNext.png';
+import imgTailwind  from '../public/assets/imagens/iconTailwind.png';
+import imgStyled  from '../public/assets/imagens/styled-components.svg';
+import imgGit  from '../public/assets/imagens/iconGit.png';
+import imgVue  from '../public/assets/imagens/iconVue.png';
+
 export default function Home() {
 
   const skills = [
-    
+    {
+      title: 'HTML',
+      src: imgHtml
+    },
+    {
+      title: 'Javascript',
+      src:imgJavascript
+    },
+    {
+      title: 'CSS',
+      src:imgCss
+    },
+    {
+      title: 'Typescript',
+      src:imgTypescript
+    },
+    {
+      title: 'Tailwind',
+      src:imgTailwind
+    },
+    {
+      title: 'Styled-Components',
+      src: imgStyled
+    },
+    {
+      title: 'Next',
+      src: imgNext
+    },
+    {
+      title: 'Git',
+      src: imgGit
+    },
+    {
+      title: 'Vue',
+      src: imgVue
+    },
   ]
   return (
     <section className={styles.containerPrincipal}>
@@ -62,8 +108,12 @@ export default function Home() {
       </section>
       <section className={styles.sectionSkills}>
           <h1>Habilidades</h1>
-          <div>
-            conteudo
+          <div className={styles.containerSkills}>
+            {skills.map((skill, index)=> {
+              return (
+                <CardSkill key={index} title={skill.title} imgSkill={skill.src}/>
+              )
+            })}
           </div>
       </section>
       <section>Section Experiências</section>

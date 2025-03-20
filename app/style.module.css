@@ -152,11 +152,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 8rem;
 
   h1 {
     color: #56cef9;
     font-weight: 800;
     font-size: 3.2rem;
   }
+}
+
+.containerSkills {
+  max-width: 1400px;
+  width: 85%;
+  margin: 0 auto; 
+  padding: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  row-gap: 2rem;
 }
