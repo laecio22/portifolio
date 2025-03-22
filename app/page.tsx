@@ -58,7 +58,7 @@ export default function Home() {
     },
   ]
   return (
-    <section className={styles.containerPrincipal}>
+    <section className='container'>
       <section className={styles.sectionHome}>
         <div className={styles.containerText}>
           <div className={styles.subContainerText}>
@@ -84,7 +84,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className={styles.sectionApresentation}>
+      <section className={`${styles.sectionApresentation} container`}>
         <div className={styles.containerImageApresentation}>
           <Image
             src={ImageNote}
@@ -108,7 +108,7 @@ export default function Home() {
       </section>
       <section className={styles.sectionSkills}>
           <h1>Habilidades</h1>
-          <div className={styles.containerSkills}>
+          <div className={`${styles.containerSkills} container`}>
             {skills.map((skill, index)=> {
               return (
                 <CardSkill key={index} title={skill.title} imgSkill={skill.src}/>

@@ -7,16 +7,16 @@
     transform: translate3d(-30px, -50px, 0px);
   }
 }
-.containerPrincipal {
-  max-width: 1400px;
-  margin: 0 auto;
-}
 
 /* estilização  sessão Home */
 .sectionHome {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .containerText {
@@ -72,6 +72,10 @@
 
 .containerImage {
   position: relative;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
 }
 
 .imageUser {
@@ -85,19 +89,31 @@
 
 .sectionApresentation {
   background: rgb(29, 34, 49);
-  height: 25rem;
-  max-width: 1400px;
-  width: 85%;
-  margin: 0 auto;
+  height: 30rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 0.6rem;
+
+  @media screen and (max-width: 1130px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media screen and (max-width: 917px) {
+    width: 85%;
+  }
+
+  @media screen and (max-width: 712px) {
+    height: auto;
+  }
 }
 
 .containerImageApresentation {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 1130px) {
+    display: none;
+  }
 }
 
 .imageUserDesigner {
@@ -107,6 +123,15 @@
 
 .containerTextApresentation {
   padding-top: 2rem;
+
+  @media screen and (max-width: 1130px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
   div {
     font-size: 1.2rem;
@@ -119,7 +144,6 @@
   }
 
   a {
- 
     padding: 1rem 1.8rem;
     border: none;
     border-radius: 0.5rem;
@@ -127,10 +151,14 @@
     font-family: "Roboto";
     font-size: 1.2rem;
     background: #4a6aba;
-    color: #eee;   
+    color: #eee;
 
     &:hover {
       background: rgb(44, 5, 236);
+    }
+
+    @media screen and (max-width: 712px) {
+      margin-bottom: 2rem;
     }
   }
 }
@@ -162,12 +190,21 @@
 }
 
 .containerSkills {
-  max-width: 1400px;
-  width: 85%;
-  margin: 0 auto; 
   padding: 0.8rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   row-gap: 2rem;
+
+  @media screen and (max-width: 1032px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 700px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 300px) {
+    grid-template-columns: 1fr;
+  }
 }

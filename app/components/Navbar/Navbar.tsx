@@ -44,7 +44,7 @@ const Navbar = () => {
     'L', 'a', 'é', 'c', 'i', 'o'
   ]
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header}`}>
       <div className={styles.containerLogo}>
         <Link href="/" className={styles.imgLogo}>
           <Image src={Logo} alt="logo da  aplicação" width={50} />
