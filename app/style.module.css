@@ -24,6 +24,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    padding-left: 3rem;
+  }
 }
 
 .subContainerText {
@@ -204,7 +208,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (min-width: 300px) {
+  @media screen and (max-width: 400px) {
     grid-template-columns: 1fr;
   }
 }
