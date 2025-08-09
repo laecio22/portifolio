@@ -1,8 +1,35 @@
+
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
+    /* Define a espessura da barra de rolagem */
+  /* scrollbar-width: thin; */
+
+  /* Define a cor do thumb e da trilha */
+  scrollbar-color: rgb(6, 47, 227) rgb(2, 6, 23);
 }
+
+::-webkit-scrollbar {
+  width: 10px ;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgb(2, 6, 23) ;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgb(6, 47, 227) ;
+  border-radius: 8px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #0303b4;
+}
+
 
 a {
   /* color: inherit; */
@@ -15,9 +42,11 @@ ul {
 
 body {
   background-color: rgb(2, 6, 23);
-  color:#ddd;
+  color: #ddd;
   font-size: 62.5%;
+
 }
+
 
 img {
   display: block;
@@ -31,7 +60,7 @@ img {
   margin: 0 auto;
   width: 85%;
 
-  @media screen and (max-width:917px) {
+  @media screen and (max-width: 917px) {
     width: 100%;
     overflow: hidden;
   }
