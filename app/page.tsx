@@ -116,7 +116,81 @@ export default function Home() {
             })}
           </div>
       </section>
-      <section>Section Experiências</section>
+      <section className={styles.sectionExperiences}>
+        <h1>Experiências</h1>
+        <div className={`${styles.containerExperiences} container`}>
+            <div className={styles.cardExperiences}>
+              <h2>MSB Tecnologia ltda</h2>
+              <span>2022-2024</span>
+              <p>Desenvolvedor Frontend</p>
+              <p>Atividades desenvolvidas:</p>
+              <ul>
+                <li>Desenvolvimento de interfaces web</li>
+                <li>Manutenção de sistemas legados</li>
+                <li>Colaboração com equipes de design e backend</li>
+                <li>Participação das  reuniões de planning,  dailys e reviews </li>
+              </ul>
+              <p>Principais stacks utilizadas:</p>
+              <ul>
+                <li>React.js</li>                
+                <li>Styled-Components</li>
+                <li>Tailwindcss</li>
+                <li>Git/GitHub</li>
+                <li>Typescript</li>
+                <li>JavaScript</li>
+                <li>HTML5 e CSS3</li> 
+                <li>Vue</li>
+              </ul>
+            </div>
+            <div className={styles.cardExperiences}>
+              <h2>MSB Tecnologia ltda</h2>
+              <span>2022-2024</span>
+              <p>Desenvolvedor Frontend</p>
+              <p>Atividades desenvolvidas:</p>
+              <ul>
+                <li>Desenvolvimento de interfaces web</li>
+                <li>Manutenção de sistemas legados</li>
+                <li>Colaboração com equipes de design e backend</li>
+                <li>Participação das  reuniões de planning,  dailys e reviews </li>
+              </ul>
+              <p>Principais stacks utilizadas:</p>
+              <ul>
+                <li>React.js</li>                
+                <li>Styled-Components</li>
+                <li>Tailwindcss</li>
+                <li>Git/GitHub</li>
+                <li>Typescript</li>
+                <li>JavaScript</li>
+                <li>HTML5 e CSS3</li> 
+                <li>Vue</li>
+              </ul>
+            </div>
+            <div className={styles.cardExperiences}>
+              <h2>MSB Tecnologia ltda</h2>
+              <span>2022-2024</span>
+              <p>Desenvolvedor Frontend</p>
+              <p>Atividades desenvolvidas:</p>
+              <ul>
+                <li>Desenvolvimento de interfaces web</li>
+                <li>Manutenção de sistemas legados</li>
+                <li>Colaboração com equipes de design e backend</li>
+                <li>Participação das  reuniões de planning,  dailys e reviews </li>
+              </ul>
+              <p>Principais stacks utilizadas:</p>
+              <ul>
+                <li>React.js</li>                
+                <li>Styled-Components</li>
+                <li>Tailwindcss</li>
+                <li>Git/GitHub</li>
+                <li>Typescript</li>
+                <li>JavaScript</li>
+                <li>HTML5 e CSS3</li> 
+                <li>Vue</li>
+              </ul>
+            </div>
+        
+        </div>
+      </section>
       <section>Section Projetos</section>
       <section>Section Contato</section>
     </section>

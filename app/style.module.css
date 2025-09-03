@@ -212,3 +212,48 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Seção  experiências */
+
+.sectionExperiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+
+  h1 {
+    color: #56cef9;
+    font-weight: 800;
+    font-size: 3.2rem;
+  }
+}
+
+.containerExperiences {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cardExperiences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(29, 34, 49);
+  border-radius: 0.6rem;
+  padding: 2rem 0;
+  gap: 1rem;
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  span, p {
+    font-size: 1.4rem;   
+  }
+
+  li {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
