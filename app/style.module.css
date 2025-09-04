@@ -93,7 +93,7 @@
 
 .sectionApresentation {
   background: rgb(29, 34, 49);
-  height: 30rem;
+  height: 45rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border-radius: 0.6rem;
@@ -144,7 +144,7 @@
   }
 
   p {
-    margin-top: 0.8rem;
+    margin-top: 0.6rem;
   }
 
   a {
@@ -233,6 +233,10 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media screen and (max-width: 917px) {
+    width: 85%;   
+  }
 }
 
 .cardExperiences {
@@ -250,10 +254,20 @@
 
   span, p {
     font-size: 1.4rem;   
+    color: #0dace6;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
   }
 
   li {
     font-size: 1.2rem;
     text-align: center;
+    width: 80%;  
+   
   }
 }
