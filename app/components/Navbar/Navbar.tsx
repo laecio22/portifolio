@@ -2,35 +2,35 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../../../public/assets/logos/logoComercio.png";
-import Link from "next/link";
 import NavItem, { NavItemInterface } from "../NavItem/NavItem";
 import styles from "./style.module.css";
 import { usePathname } from "next/navigation";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import LetterName from "../LetterName/LetterName";
+import Link from "next/link";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const items: NavItemInterface[] = [
     {
-      url: "/",
+      url: "#home",
       label: "Home",
     },
     {
-      url: "/sobre",
+      url: "#about",
       label: "Sobre",
     },
     {
-      url: "/experiencia",
+      url: "#experiences",
       label: "Experiência",
     },
     {
-      url: "/projetos",
+      url: "#projects",
       label: "Projetos",
     },
    
     {
-      url: "/contato",
+      url: "#contact",
       label: "Contato",
     },
   ];
@@ -42,7 +42,7 @@ const Navbar = () => {
   return (
     <header className={`${styles.header}`}>
       <div className={styles.containerLogo}>
-        <Link href="/" className={styles.imgLogo}>
+        <Link href="#home" className={styles.imgLogo}>
           <Image src={Logo} alt="logo da  aplicação" width={50} />
         </Link>
         <span className={styles.nameLogo}>
@@ -75,7 +75,7 @@ const Navbar = () => {
         >
           {openMenu ? <FaXmark /> : <FaBars />}
         </button>
-        <button className={styles.btnDefault}>Contatar</button>
+        {/* <button className={styles.btnDefault}>Contatar</button> */}
       </nav>
     </header>
   );

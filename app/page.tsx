@@ -58,7 +58,7 @@ export default function Home() {
   ];
   return (
     <section className="container">
-      <section className={styles.sectionHome} >
+      <section className={styles.sectionHome} id="home" >
         <div className={styles.containerText}>
           <div className={styles.subContainerText}>
             <div className={styles.welcome}>
@@ -83,7 +83,7 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className={`${styles.sectionApresentation} container`}>
+      <section className={`${styles.sectionApresentation} container`} id="about">
         <div className={styles.containerImageApresentation}>
           <Image
             src={ImageNote}
@@ -91,7 +91,7 @@ export default function Home() {
             className={styles.imageUserDesigner}
           />
         </div>
-        <div className={styles.containerTextApresentation}>
+        <div className={styles.containerTextApresentation} >
           <h2 className={styles.subTitleApresentation}> Deixe-me apresentar</h2>
           <div>
              <p>Sou  Laécio, natural  de Codó-MA, mas  atualmente  moro  em Altos-PI,
@@ -107,12 +107,12 @@ export default function Home() {
             Você pode conhecer mais sobre o meu perfil e o meu trabalho navegando pelo website.</p>      
             <p> P.S. este site é código aberto e está disponível no Github</p>
           </div>
-          <Link href="/contato">
+          <Link href="#contact">
             Entre em Contato <IoIosSend className={styles.iconSend} />
           </Link>
         </div>
       </section>
-      <section className={styles.sectionSkills}>
+      <section className={styles.sectionSkills} >
         <h1>Habilidades</h1>
         <div className={`${styles.containerSkills} container`}>
           {skills.map((skill, index) => {
@@ -122,7 +122,7 @@ export default function Home() {
           })}
         </div>
       </section>
-      <section className={styles.sectionExperiences}>
+      <section className={styles.sectionExperiences} id="experiences">
         <h1>Experiências</h1>
         <div className={`${styles.containerExperiences} container`}>
           <div className={styles.cardExperiences}>
@@ -200,8 +200,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>Section Projetos</section>
-      <section>Section Contato</section>
+      <section id="projects">Section Projetos</section>
+      <section id="contact">Section Contato</section>
     </section>
   );
 }
