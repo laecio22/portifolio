@@ -58,7 +58,7 @@ export default function Home() {
   ];
   return (
     <section className="container">
-      <section className={styles.sectionHome}>
+      <section className={styles.sectionHome} >
         <div className={styles.containerText}>
           <div className={styles.subContainerText}>
             <div className={styles.welcome}>

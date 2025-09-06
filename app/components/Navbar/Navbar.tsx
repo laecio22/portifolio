@@ -28,11 +28,7 @@ const Navbar = () => {
       url: "/projetos",
       label: "Projetos",
     },
-
-    {
-      url: "/resumo",
-      label: "Resumo",
-    },
+   
     {
       url: "/contato",
       label: "Contato",

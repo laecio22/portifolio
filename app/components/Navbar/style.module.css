@@ -11,6 +11,11 @@
   align-items: center;
   padding: 10px 3%;
   background-color: #131313;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   
 
   .navbar {
