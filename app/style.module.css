@@ -8,6 +8,20 @@
   }
 }
 
+@keyframes typing {
+  from, to {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from, to { background-color: transparent; }
+  50% { background-color: rgb(216, 28, 28); }
+}
+
 /* estilização  sessão Home */
 .sectionHome {
   min-height: 100vh;
@@ -50,10 +64,29 @@
 
 .name {
   font-size: 3rem;
+  /* animation: typing 3s steps(25, end), 0.5s infinite normal alternate; */
 }
 
 .cargo {
   font-size: 2.3rem;
+  /* animation: typing 3s steps(13, end) 0.5s infinite normal forwards; */
+}
+
+.name, .cargo {
+   display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.cursor {
+  top: 0;
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 40px;
+  background-color: #eee;
+  margin-left: 8px;
+  animation: blink 0.5s step-end infinite alternate;
 }
 
 .button {

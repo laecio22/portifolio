@@ -58,7 +58,7 @@ export default function Home() {
   ];
   return (
     <section className="container">
-      <section className={styles.sectionHome} id="home" >
+      <section className={styles.sectionHome} id="home">
         <div className={styles.containerText}>
           <div className={styles.subContainerText}>
             <div className={styles.welcome}>
@@ -67,8 +67,14 @@ export default function Home() {
               </span>
               Olá , o meu nome é{" "}
             </div>
-            <h1 className={styles.name}>Laécio</h1>
-            <h3 className={styles.cargo}>Desenvolvedor frontend</h3>
+            <div>
+              <h1 className={styles.name}>Laécio Da Conceição Viana</h1>
+              <div className={styles.cursor}></div>
+            </div>
+            <div>
+              <h3 className={styles.cargo}>Desenvolvedor frontend</h3>
+              <div className={styles.cursor}></div>
+            </div>
             <button className={styles.button}>
               Conheça meu portifólio{" "}
               <FaArrowRight className={styles.iconArrowRight} />
@@ -83,7 +89,10 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className={`${styles.sectionApresentation} container`} id="about">
+      <section
+        className={`${styles.sectionApresentation} container`}
+        id="about"
+      >
         <div className={styles.containerImageApresentation}>
           <Image
             src={ImageNote}
@@ -91,20 +100,33 @@ export default function Home() {
             className={styles.imageUserDesigner}
           />
         </div>
-        <div className={styles.containerTextApresentation} >
+        <div className={styles.containerTextApresentation}>
           <h2 className={styles.subTitleApresentation}> Deixe-me apresentar</h2>
           <div>
-             <p>Sou  Laécio, natural  de Codó-MA, mas  atualmente  moro  em Altos-PI,
-            sou um desenvolvedor front-end apaixonado por projetar e codificar.</p>
-            <p> Minha especialidade é a criação de interfaces e funcionalidades para
-            aplicativos da web usando React.js.</p>
-            <p> Meu  primeiro contato com  desenvolvimento web,
-            foi no curso técnico  em informática no IFPI, onde  tive  a oportunidade  de aprender
-            as  bases  do  desenvolvimento  web,  como  HTML, CSS e JavaScript.</p>
-            <p> Desde então, venho me dedicando a aprimorar minhas habilidades e
-            conhecimentos na área, buscando sempre estar atualizado com as
-            últimas tendências e tecnologias do mercado e  buscar sempre resolver  os  problemas.
-            Você pode conhecer mais sobre o meu perfil e o meu trabalho navegando pelo website.</p>      
+            <p>
+              Sou Laécio, natural de Codó-MA, mas atualmente moro em Altos-PI,
+              sou um desenvolvedor front-end apaixonado por projetar e
+              codificar.
+            </p>
+            <p>
+              {" "}
+              Minha especialidade é a criação de interfaces e funcionalidades
+              para aplicativos da web usando React.js.
+            </p>
+            <p>
+              {" "}
+              Meu primeiro contato com desenvolvimento web, foi no curso técnico
+              em informática no IFPI, onde tive a oportunidade de aprender as
+              bases do desenvolvimento web, como HTML, CSS e JavaScript.
+            </p>
+            <p>
+              {" "}
+              Desde então, venho me dedicando a aprimorar minhas habilidades e
+              conhecimentos na área, buscando sempre estar atualizado com as
+              últimas tendências e tecnologias do mercado e buscar sempre
+              resolver os problemas. Você pode conhecer mais sobre o meu perfil
+              e o meu trabalho navegando pelo website.
+            </p>
             <p> P.S. este site é código aberto e está disponível no Github</p>
           </div>
           <Link href="#contact">
@@ -112,7 +134,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section className={styles.sectionSkills} >
+      <section className={styles.sectionSkills}>
         <h1>Habilidades</h1>
         <div className={`${styles.containerSkills} container`}>
           {skills.map((skill, index) => {
@@ -187,7 +209,7 @@ export default function Home() {
             <ul>
               <li>Suporte ao usuário.</li>
               <li> Instalação e Desinstalação de programas e softwares.</li>
-              <li>               
+              <li>
                 Instalação e Desinstalação dos computadores, impressoras e
                 outros equipamentos de hardware.
               </li>
