@@ -9,17 +9,25 @@
 }
 
 @keyframes typing {
-  from, to {
+  0% {
     width: 0;
   }
   50% {
     width: 100%;
   }
+
+  100% {
+    width: 0;
+  }
 }
 
 @keyframes blink {
-  from, to { background-color: transparent; }
-  50% { background-color: rgb(216, 28, 28); }
+  from,
+  to {
+    background-color: rgb(150, 150, 240);
+    opacity: 1;
+  }
+ 
 }
 
 /* estilização  sessão Home */
@@ -64,29 +72,38 @@
 
 .name {
   font-size: 3rem;
-  /* animation: typing 3s steps(25, end), 0.5s infinite normal alternate; */
+  width: 22ch;
+  animation: typing 5s steps(22, end) infinite;
+  
 }
 
 .cargo {
   font-size: 2.3rem;
-  /* animation: typing 3s steps(13, end) 0.5s infinite normal forwards; */
+  max-width: 20ch;
+  animation: typing 5s steps(20, end) infinite;
+  
+  
 }
 
-.name, .cargo {
-   display: inline-block;
+.typingContainer  {
+  display: inline-block;
+  position: relative; 
   overflow: hidden;
-  white-space: nowrap;
+  white-space: nowrap;  
+  vertical-align: middle;
 }
+
+
 
 .cursor {
+  position: absolute;
+  right: 0;
   top: 0;
-  content: "";
-  display: inline-block;
   width: 5px;
-  height: 40px;
+  height: 100%;
   background-color: #eee;
-  margin-left: 8px;
-  animation: blink 0.5s step-end infinite alternate;
+  animation: blink 1s step-end infinite;
+  vertical-align: middle;
 }
 
 .button {
@@ -268,7 +285,7 @@
   gap: 2rem;
 
   @media screen and (max-width: 917px) {
-    width: 85%;   
+    width: 85%;
   }
 }
 
@@ -285,8 +302,9 @@
     font-size: 2rem;
   }
 
-  span, p {
-    font-size: 1.4rem;   
+  span,
+  p {
+    font-size: 1.4rem;
     color: #0dace6;
   }
 
@@ -300,7 +318,6 @@
   li {
     font-size: 1.2rem;
     text-align: center;
-    width: 80%;  
-   
+    width: 80%;
   }
 }

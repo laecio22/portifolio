@@ -67,14 +67,14 @@ export default function Home() {
               </span>
               Olá , o meu nome é{" "}
             </div>
-            <div>
-              <h1 className={styles.name}>Laécio Da Conceição Viana</h1>
-              <div className={styles.cursor}></div>
-            </div>
-            <div>
-              <h3 className={styles.cargo}>Desenvolvedor frontend</h3>
-              <div className={styles.cursor}></div>
-            </div>
+              <h1 className={`${styles.name} ${styles.typingContainer} `}>Laécio Da Conceição Viana  <span className={styles.cursor}></span> </h1>
+             
+           
+              <h1 className={`${styles.cargo} ${styles.typingContainer}`}>
+                Desenvolvedor frontend 
+              <span className={styles.cursor}></span>
+              </h1>
+           
             <button className={styles.button}>
               Conheça meu portifólio{" "}
               <FaArrowRight className={styles.iconArrowRight} />
