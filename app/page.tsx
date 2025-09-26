@@ -1,3 +1,4 @@
+'use client'
 import styles from "./style.module.css";
 import Image from "next/image";
 import imageTecnologia from "../public/assets/imagens/home.png";
@@ -16,8 +17,10 @@ import imgTailwind from "../public/assets/imagens/iconTailwind.png";
 import imgStyled from "../public/assets/imagens/styled-components.svg";
 import imgGit from "../public/assets/imagens/iconGit.png";
 import imgVue from "../public/assets/imagens/iconVue.png";
+import useScrollReveal from "./hooks/useScrollReveal";
 
 export default function Home() {
+  useScrollReveal(`.${styles.cardExperiences}`, {  delay: 200 });
   const skills = [
     {
       title: "HTML",

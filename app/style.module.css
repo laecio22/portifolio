@@ -27,9 +27,7 @@
     background-color: rgb(150, 150, 240);
     opacity: 1;
   }
- 
 }
-
 /* estilização  sessão Home */
 .sectionHome {
   min-height: 100vh;
@@ -74,26 +72,21 @@
   font-size: 3rem;
   width: 22ch;
   animation: typing 5s steps(22, end) infinite;
-  
 }
 
 .cargo {
   font-size: 2.3rem;
   max-width: 20ch;
   animation: typing 5s steps(20, end) infinite;
-  
-  
 }
 
-.typingContainer  {
+.typingContainer {
   display: inline-block;
-  position: relative; 
+  position: relative;
   overflow: hidden;
-  white-space: nowrap;  
+  white-space: nowrap;
   vertical-align: middle;
 }
-
-
 
 .cursor {
   position: absolute;
